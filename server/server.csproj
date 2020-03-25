@@ -6,8 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NServiceBus" Version="7.2.3" />
-    <PackageReference Include="NServiceBus.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Rebus" Version="6.1.0" />
+    <PackageReference Include="Rebus.ServiceProvider" Version="5.0.5" />
+    <PackageReference Include="Rebus.SqlServer" Version="6.1.0" />
   </ItemGroup>
 
   <ItemGroup>

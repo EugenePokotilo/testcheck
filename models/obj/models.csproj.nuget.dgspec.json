@@ -47,13 +47,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
-            "NServiceBus": {
+            "Rebus": {
               "target": "Package",
-              "version": "[7.2.3, )"
+              "version": "[6.1.0, )"
             },
-            "NServiceBus.SqlServer": {
+            "Rebus.ServiceProvider": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[5.0.5, )"
+            },
+            "Rebus.SqlServer": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             }
           },
           "imports": [
