@@ -1,0 +1,9 @@
+C:\yepo\dev\kdd\poc\messaging\models\obj\Debug\netstandard2.0\models.csprojAssemblyReference.cache
+C:\yepo\dev\kdd\poc\messaging\models\obj\Debug\netstandard2.0\models.csproj.CoreCompileInputs.cache
+C:\yepo\dev\kdd\poc\messaging\models\obj\Debug\netstandard2.0\models.AssemblyInfoInputs.cache
+C:\yepo\dev\kdd\poc\messaging\models\obj\Debug\netstandard2.0\models.AssemblyInfo.cs
+C:\yepo\dev\kdd\poc\messaging\models\bin\Debug\netstandard2.0\models.deps.json
+C:\yepo\dev\kdd\poc\messaging\models\bin\Debug\netstandard2.0\models.dll
+C:\yepo\dev\kdd\poc\messaging\models\bin\Debug\netstandard2.0\models.pdb
+C:\yepo\dev\kdd\poc\messaging\models\obj\Debug\netstandard2.0\models.dll
+C:\yepo\dev\kdd\poc\messaging\models\obj\Debug\netstandard2.0\models.pdb

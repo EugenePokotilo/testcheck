@@ -1,0 +1,145 @@
+﻿2020-03-24 14:30:29.376 INFO  Logging to 'C:\yepo\dev\kdd\poc\messaging\server\bin\Debug\netcoreapp3.1\' with level Info
+2020-03-24 14:30:29.724 INFO  No valid license could be found. Falling back to trial license with start date '2020-03-24'.
+2020-03-24 14:30:30.262 WARN  Table Server@[sender]@[NSB] does not contain index 'Index_Expires'.
+Adding this index will speed up the process of purging expired messages from the queue. Please consult the documentation for further information.
+2020-03-24 14:30:30.248 FATAL Exception thrown while moving matured delayed messages
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'NSB.sender.Server.Delayed'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at NServiceBus.Transport.SqlServer.DelayedMessageTable.MoveDueMessages(Int32 batchSize, SqlConnection connection, SqlTransaction transaction, CancellationToken cancellationToken)
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.MoveMaturedDelayedMessages()
+ClientConnectionId:89bdc419-467a-469a-bfd3-7df1f818d850
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2000
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2020-03-24 14:30:55.128 FATAL Exception thrown while moving matured delayed messages
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'NSB.sender.Server.Delayed'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at NServiceBus.Transport.SqlServer.DelayedMessageTable.MoveDueMessages(Int32 batchSize, SqlConnection connection, SqlTransaction transaction, CancellationToken cancellationToken)
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.MoveMaturedDelayedMessages()
+ClientConnectionId:bd77631b-66af-4450-aeb8-385757e4ab23
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2000
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2020-03-24 14:30:55.140 WARN  Sql peek operation failed
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'NSB.sender.Server'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.InternalEndExecuteReader(IAsyncResult asyncResult, String endMethod)
+   at System.Data.SqlClient.SqlCommand.EndExecuteReaderInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteReader(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at NServiceBus.Transport.SqlServer.TableBasedQueue.TryPeek(SqlConnection connection, SqlTransaction transaction, CancellationToken token, Int32 timeoutInSeconds)
+   at NServiceBus.Transport.SqlServer.QueuePeeker.Peek(TableBasedQueue inputQueue, RepeatedFailuresOverTimeCircuitBreaker circuitBreaker, CancellationToken cancellationToken)
+ClientConnectionId:bd77631b-66af-4450-aeb8-385757e4ab23
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2000
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2020-03-24 14:33:17.309 INFO  Logging to 'C:\yepo\dev\kdd\poc\messaging\server\bin\Debug\netcoreapp3.1\' with level Info
+2020-03-24 14:33:18.059 INFO  No valid license could be found. Falling back to trial license with start date '2020-03-24'.
+2020-03-24 14:33:18.604 WARN  Table Server@[sender]@[NSB] does not contain index 'Index_Expires'.
+Adding this index will speed up the process of purging expired messages from the queue. Please consult the documentation for further information.
+2020-03-24 14:33:18.560 FATAL Exception thrown while moving matured delayed messages
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'NSB.sender.Server.Delayed'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at NServiceBus.Transport.SqlServer.DelayedMessageTable.MoveDueMessages(Int32 batchSize, SqlConnection connection, SqlTransaction transaction, CancellationToken cancellationToken)
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.MoveMaturedDelayedMessages()
+ClientConnectionId:8c433d5b-29a3-47e5-9615-209ee79740b4
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2000
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2020-03-24 14:33:45.329 INFO  Logging to 'C:\yepo\dev\kdd\poc\messaging\server\bin\Debug\netcoreapp3.1\' with level Info
+2020-03-24 14:33:46.096 INFO  No valid license could be found. Falling back to trial license with start date '2020-03-24'.
+2020-03-24 14:33:46.704 WARN  Table Server@[dbo]@[NSB] does not contain index 'Index_Expires'.
+Adding this index will speed up the process of purging expired messages from the queue. Please consult the documentation for further information.
+2020-03-24 14:33:46.688 FATAL Exception thrown while moving matured delayed messages
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'NSB.dbo.Server.Delayed'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location where exception was thrown ---
+   at NServiceBus.Transport.SqlServer.DelayedMessageTable.MoveDueMessages(Int32 batchSize, SqlConnection connection, SqlTransaction transaction, CancellationToken cancellationToken)
+   at NServiceBus.Transport.SqlServer.DueDelayedMessageProcessor.MoveMaturedDelayedMessages()
+ClientConnectionId:534f76f9-6c00-4a85-9407-d6615c5dcc24
+Error Number:208,State:1,Class:16
+Exception details:
+	HelpLink.ProdName: Microsoft SQL Server
+	HelpLink.ProdVer: 15.00.2000
+	HelpLink.EvtSrc: MSSQLServer
+	HelpLink.EvtID: 208
+	HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink
+	HelpLink.LinkId: 20476
+2020-03-24 14:34:28.023 INFO  Logging to 'C:\yepo\dev\kdd\poc\messaging\server\bin\Debug\netcoreapp3.1\' with level Info
+2020-03-24 14:34:28.437 INFO  Auditing processed messages to 'audit'
+2020-03-24 14:34:28.512 INFO  No valid license could be found. Falling back to trial license with start date '2020-03-24'.
+2020-03-24 14:57:55.144 INFO  Logging to 'C:\yepo\dev\kdd\poc\messaging\server\bin\Debug\netcoreapp3.1\' with level Info
+2020-03-24 14:57:55.898 INFO  Auditing processed messages to 'audit'
+2020-03-24 14:57:56.017 INFO  No valid license could be found. Falling back to trial license with start date '2020-03-24'.
+2020-03-24 15:11:57.832 INFO  Logging to 'C:\yepo\dev\kdd\poc\messaging\server\bin\Debug\netcoreapp3.1\' with level Info
+2020-03-24 15:11:58.171 INFO  Auditing processed messages to 'audit'
+2020-03-24 15:11:58.237 INFO  No valid license could be found. Falling back to trial license with start date '2020-03-24'.
+2020-03-24 15:15:06.846 INFO  Logging to 'C:\yepo\dev\kdd\poc\messaging\server\bin\Debug\netcoreapp3.1\' with level Info
+2020-03-24 15:15:07.618 INFO  Auditing processed messages to 'audit'
+2020-03-24 15:15:07.685 INFO  No valid license could be found. Falling back to trial license with start date '2020-03-24'.
+2020-03-24 16:26:43.670 INFO  Logging to 'C:\yepo\dev\kdd\poc\messaging\server\bin\Debug\netcoreapp3.1\' with level Info
+2020-03-24 16:26:44.885 INFO  Auditing processed messages to 'audit'
+2020-03-24 16:26:45.100 INFO  No valid license could be found. Falling back to trial license with start date '2020-03-24'.
